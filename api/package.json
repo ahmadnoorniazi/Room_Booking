@@ -1,0 +1,44 @@
+{
+  "name": "room-booking-system",
+  "version": "1.0.0",
+  "description": "Application for booking room",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14",
+    "mongoose": "^4.13.9",
+    "mongoose-timestamp": "^0.6.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-jwt": "^3.0.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.4.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.14.10",
+    "now": "^9.2.7",
+    "prettier": "^1.10.2"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "drop": "node models/drop.js",
+    "seed": "node models/seed.js",
+    "start": "node server.js",
+    "deploy": "now -E production.env",
+    "rmdeploy": "now rm room-booking-system"
+  }
+}
